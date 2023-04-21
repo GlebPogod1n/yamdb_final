@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from api_yamdb.settings import LIST_PER_PAGE
+
 from .models import User
 
 
