@@ -71,15 +71,15 @@ jobs:
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
           
           docker-compose -f docker-compose.yaml stop web nginx
-            docker-compose -f docker-compose.yaml rm --force web nginx
+          docker-compose -f docker-compose.yaml rm --force web nginx
             
-            docker pull ${{ secrets.DOCKER_USERNAME }}/infra-web:latest
+          docker pull ${{ secrets.DOCKER_USERNAME }}/infra-web:latest
             
-            docker-compose -f docker-compose.yaml up -d
+          docker-compose -f docker-compose.yaml up -d
             
-            docker exec \
-              -t $(docker-compose -f docker-compose.yaml ps -q web) \
-              sh -c 'python3 manage.py collectstatic --no-input'
+          docker exec \
+            -t $(docker-compose -f docker-compose.yaml ps -q web) \
+            sh -c 'python3 manage.py collectstatic --no-input'
 
   send_message:
     runs-on: ubuntu-latest
