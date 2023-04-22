@@ -4,7 +4,7 @@ RUN apt update && apt install -y gcc libpq-dev
 
 WORKDIR /app/api_yamdb
 
-COPY api_yamdb/requirements.txt /app
+COPY requirements.txt /app
 
 RUN pip3 install -r /app/requirements.txt --no-cache-dir
 
