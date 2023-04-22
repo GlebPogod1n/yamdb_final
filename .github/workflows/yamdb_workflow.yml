@@ -57,8 +57,9 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
+        stack_file_name: docker-compose.yaml
         script: |
-          sudo docker pull glebpogod1n/yamdb_final
+          sudo docker pull GlebPogod1n/yamdb_final
           sudo docker-compose stop
           sudo docker-compose rm web
 
