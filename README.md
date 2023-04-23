@@ -64,13 +64,6 @@ docker-compose exec web python3 manage.py collectstatic --no-input
 sudo docker-compose exec web python3 manage.py loaddata fixtures.json
 ```
 
-Проект будет доступен локально по адресу:
-
-```
-http://localhost/
-```
-
-
 ### Заполнение базы данных тестовыми данными:
 
 Из корневой папки проекта перейти в папку api_yamdb:
@@ -84,17 +77,24 @@ cd api_yamdb
 python manage.py fill_db
 ```
 
+###Проект будет доступен локально по адресу:
+
+```
+http://localhost/
+```
+
 ### Примеры обращений к API Yatube:
 
 По адресу http://127.0.0.1:8000/redoc/ подключена документация, в которой
 описаны все примеры обращений к API
-
+```
 ### Авторы:
 
 Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)     
 Трофимов Руслан - [https://github.com/EdmondKoko](https://github.com/EdmondKoko)   
-Чабанный Денис - [https://github.com/DociDog](https://github.com/DociD
-
-### контейнеризация:
-
+Чабанный Денис - [https://github.com/DociDog](https://github.com/DociD)
+```
+### контейнеризация, CI/CD:
+```
 Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)
+```
