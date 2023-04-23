@@ -39,6 +39,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 ```
 cd infra_sp2
 ```
+- Перейти в папку infra:
 
 ```
 cd infra
