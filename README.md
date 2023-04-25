@@ -76,18 +76,6 @@ cd api_yamdb
 ```
 python manage.py fill_db
 ```
-```
-### Проект будет доступен локально по адресу:
-```
-```
-http://localhost/
-```
-```
-### Примеры обращений к API Yatube:
-```
-По адресу http://127.0.0.1:8000/redoc/ подключена документация, в которой
-описаны все примеры обращений к API
-```
 ### Авторы:
 
 Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)     
@@ -99,3 +87,7 @@ http://localhost/
 
 Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)
 ```
+## Развёрнутый проект
+http://51.250.110.182/api/v1/
+http://51.250.110.182/admin/
+http://51.250.110.182/redoc/
