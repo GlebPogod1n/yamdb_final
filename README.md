@@ -88,6 +88,6 @@ python manage.py fill_db
 Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)
 ```
 ## Развёрнутый проект
-http://51.250.110.182/api/v1/
-http://51.250.110.182/admin/
-http://51.250.110.182/redoc/
+http://158.160.2.226/api/v1/
+http://158.160.2.226/admin/
+http://158.160.2.226/redoc/
